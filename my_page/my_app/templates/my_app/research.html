@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+{% extends 'my_app/base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <div class="row content-style justify-content-center">
+
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="list-group sticky-list">
+              <a href="#" class="link-to-section list-group-item list-group-item-action">The Oscillation of Liquid Surface Impacted by High-Speed Air Jet </a>
+              <a href="#" class="link-to-section list-group-item list-group-item-action">Advanced Dispersion Models For Particle-Laden Swirling Flows</a>
+              <a href="#" class="link-to-section list-group-item list-group-item-action">Incompressible Viscous Flow in a Helical Square Annulus</a>
+              <a href="#" class="link-to-section list-group-item list-group-item-action">Mixed Convection of Al2O3 NanoFluid in Annulus Under External Electromagnetic Force</a>
+              <a href="#" class="link-to-section list-group-item list-group-item-action"> Simulation of Evacuated Tube Solar Collector Integrated with Phase Change Materials</a>
+          </div>
+        </div>
+        {% comment %} <div class="col-md-3">
+            <p id='Link2Section' class="sticky-list"> <a>The Oscillation of Liquid Surface Impacted by High-Speed Air Jet </a> </p>
+        </div> {% endcomment %}
+
+        <div class="col-12 col-lg-9 ">
+            <h4 id="Section" class="section project-title">The Oscillation of Liquid Surface Impacted by High-Speed Air Jet</h4>
+            <p class="start-paragraph">High speed gas jet when placed close enough to a liquid surface can penetrate deep into the liquid,
+              and create a complex (and quite a bit messy!) multiphase phenomenon. The gas flow pushes down the liquid leaving a cavity in the surface,
+               and the liquid pushes back to fill the cavity. This cycle continues forever. The liquid surface exhibits an irregular oscillatory patterns of behavior
+                which are almost impossible to predict. This project (originally part of my Masters' thesis) deals with observing this behavior in the lab,
+                and CFD simulation of it in a specific settings for an air-water system.</p>
+                <p class="start-paragraph">Below is 1 second of the experiment recorded on a high speed camera.</p>
+                {% comment %} <iframe src="https://www.aparat.com/v/r8xRj" width="300" height="300"></iframe> {% endcomment %}
+                <div id="15475448729549202"><script type="text/JavaScript" src="https://www.aparat.com/embed/r8xRj?data[rnddiv]=15475448729549202&data[responsive]=yes"></script></div>
+
+
+            <p class="start-paragraph">The simulation is based on an axisymmetric approach, the volume of fluid (VOF) model (for tracking the interface and address multiphase nature),
+              and k-&omega; SST turbulence model. Reproducing the essential features of the oscillatory behavior of the interface such cavity depth and formation of
+              ligaments and sheets in the simulation as well as evaluating the accuracy of the numerical results are on the agenda here.</p>
+
+              <p  class="start-paragraph">You can watch 0.5 sec of the simulation below.</p>
+
+            <div id="15475797769925847"><script type="text/JavaScript" src="https://www.aparat.com/embed/52SOJ?data[rnddiv]=15475797769925847&data[responsive]=yes"></script></div>
+            <h5>Corresponding Publications:</h5>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0307904X18302415">
+              <p class="start-paragraph">
+                Adib, Mohammad, Mohammad Ali Ehteram, and Hassan Basirat Tabrizi.
+                "Numerical and experimental study of oscillatory behavior of liquid surface agitated by high-speed gas jet."
+                 Applied Mathematical Modelling 62 (2018): 510-525.
+              </p>
+            </a>
+
+            <br>
+            <hr>
+            <br>
+
+            <h4 id="Section" class="section project-title">Advanced Dispersion Models For Particle-Laden Swirling Flows</h4>
+            <p class="start-paragraph">
+              <i>Dispersion</i> is the process through which the turbulence of carrier fluid affects the transport and distribution of the carried particles. Technically speaking, dispersion modelling means reconstructing
+              fluctuating velocity components of carried phase from known flow quantities (calculated from the Eulerian solution) and adding that to the mean values at the location of discerete particles
+               (tracked via Lagrangian appraoch). Here, four different dispersion models are applied to a swirling flow contained in a chamber. The particles in different sizes are injected through the central air flow,
+               and then mix with swirling annulus flow at outer radius. Some of them find the way to the end of chamber and some are trapped in the vortex the upper periphery section of the chamber
+               based on their size and velocity.
+            </p>
+            <p class="start-paragraph">The animation below from compiled from simulation results show the particles developing in the swirling flow:</p>
+            <div id="1547623960794997"><script type="text/JavaScript" src="https://www.aparat.com/embed/e9UE4?data[rnddiv]=1547623960794997&data[responsive]=yes"></script></div>
+
+
+            <p class=" start-paragraph">Three continuous random walk models, including Sommerfeld’s model, Moissette et al. (MOB) model, and probability density function (PDF),
+              and the conventionally used eddy life time (ELT) model are compared.  The ELT model which is still the default dispersion model in commercial softwares like Ansys Fluent produce the largest errors for
+              all particle statistics, especially for the fluctuating velocities while other models, especially MOB and PDF, bring about a satisfactory agreement with the reference experiment measurements with
+              MOB being the most accurate model in predicting the cross-stream particle velocity fluctuations with errors less than 20%.
+            </p>
+            <p class=" start-paragraph">
+              Here is the animation in the stationary state of simulation:
+            </p>
+
+            <div id="15476306913322122"><script type="text/JavaScript" src="https://www.aparat.com/embed/Uqv80?data[rnddiv]=15476306913322122&data[responsive]=yes"></script></div>
+
+
+            <h5>Corresponding Publications:</h5>
+            <a href="https://www.sciencedirect.com/science/article/pii/S0301932217306420">
+              <p class="start-paragraph">
+                Kazemi, S., M. Adib, and E. Amani. "Numerical study of advanced dispersion models in particle-laden swirling flows." International Journal of Multiphase Flow 101 (2018): 167-185.
+              </p>
+            </a>
+
+            <br>
+            <hr>
+            <br>
+
+            <h4  id="Section" class="section project-title">Incompressible Viscous Flow in a Helical Square Annulus</h4>
+            <p class="start-paragraph">The finite difference method along with projection method is applied to 3D laminar Navier-Stokes equations in a helical square duct. Since the solution is not tied to
+               a predefined grid, a wide range of geometrical parameters including curvature, torsion, and aspect ratio are studied to see how they alter the flow regime in terms of
+                the axial velocity, secondary flows pattern, and friction factor. The whole set of simulation are done using a home-made CFD code (written in Fortran) developed specifically for this project.
+            </p>
+
+            <img class="research-image" src="{% static 'img/helical.png' %}" alt="">
+
+
+
+            <h5>Corresponding Publications:</h5>
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0096300315300230">
+              <p class="start-paragraph">
+                Nobari, M. R. H., et al. "A numerical investigation of incompressible viscous flow in a helical square annulus." Applied Mathematics and Computation 277 (2016): 127-141.
+              </p>
+            </a>
+
+            <br>
+            <hr>
+            <br>
+
+            <h4 id="Section" class="section project-title">Mixed Convection of Al2O3 NanoFluid in Annulus Under External Electromagnetic Force</h4>
+            <p class="start-paragraph">
+                Here, Al2O3 nanofluid flow between two concenteric cylinders is studied. The iso-thermal inner cylinder hotter than the outer cylinder
+                rotates and moves axially upwards against the direction of gravity.
+                A uniform external electromagnetic field is also present the effect of which is represented by the non-dimentional Hartman Number in the flow simulation.
+                The intensity of the electromagnetic field alters both velocity and temperature distirbution of the nanofluid in the domain.
+            </p>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <img class="research-image" src="{% static 'img/nanofluid1.png' %}" alt="">
+              </div>
+              <div class="col-md-6">
+                <img class="research-image" src="{% static 'img/nanofluid2.png' %}" alt="">
+              </div>
+            </div>
+
+
+            <br>
+            <hr>
+            <br>
+
+
+            <h4 id="Section" class="section project-title"> Simulation of Evacuated Tube Solar Collector Integrated with Phase Change Materials </h4>
+            <p class="start-paragraph">
+              Solar collectors absorb the radiation from the sun and transform it to heat via a transfer medium.Two prevalent collector formats are Flat Plate Collector
+               and Evacuated Tube Collector. One advantage of evacuated tube solar collectors is that they are relatively insensitive to the direction of sunlight,
+               while flat plates can suffer from additional reflection if the direction of sunlight is not suitable. Solar water heaters, a particular
+               type of evacuated tube collectors, is of high importance because of their widely domestic use. A solar water heater system often needs a booster (storage unit)
+               to provide heat whenever little or no solar energy is available.
+            </p>
+            <p class="start-paragraph">
+              Among various methods for heat storage, the use of solid–liquid phase change materials has attracted considerable attention. In this method, the heat pipe is immersed
+              inside the phase change material, where heat is effectively accumulated and stored for an extended period of time due to thermal insulation of evacuated tubes.
+              The benefit of this method includes improved functionality by delayed release of heat, thus providing hot water during the hours of high demand or when solar
+              intensity is insufficient.
+            </p>
+            <p class="start-paragraph">
+                This project specifically deals with a 2D simulation of a PCM-integrated sollar collector to study how using two different PCM, namely Erythritol and Tritriacontane, improves
+                the operation of the solar collector. The heat pipe fin temperature shows a more uniform during simulation time in both normal and stagnation conditons.
+            </p>
+
+            <div class="row">
+              <div class="col-md-6">
+                <img class="research-image" src="{% static 'img/collector1.png' %}" alt="">
+              </div>
+              <div class="col-md-6">
+                <img class="research-image" src="{% static 'img/collector2.png' %}" alt="">
+              </div>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+
+      </div>
+{% endblock %}

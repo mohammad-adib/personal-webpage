@@ -1,0 +1,308 @@
+
+
+.centerimage{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+}
+
+
+
+.centerstage{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* NAVBAR STYLING ---------------------------------------------------------------- */
+
+
+
+.navbar-toggler{
+  margin-top: 5px;
+}
+
+
+.navbar-style{
+  background-color: rgba(255,255,255,0);
+  color: black;
+  bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  /* height: 45px; */
+
+}
+
+.navbar-nav{
+  border-top: 1px solid rgb(220,220,220);
+  /* transform: translateY(1px); */
+  background-color: rgba(255,255,255,1);
+  /* box-shadow: 0px 1px 4px rgb(220,220,220); */
+}
+
+.navbar-brand{
+    font-family: 'century_gothic';
+    font-size: 1.1em;
+    font-weight: bold;
+    display: none;
+    top: 4px;
+    transform: translate(-5%);
+
+}
+
+
+.nav-item-style{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid white;
+  transition: border-bottom-color 1s;
+}
+
+.navbar-collapse{
+  transform: translateY(8px);
+}
+
+.nav-text-style{
+  font-family: 'lato_thin';
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align:center;
+}
+
+#nav-text-id{
+  color: rgb(140,140,140);
+}
+
+.nav-highlighted{
+    border-bottom-width: 2px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    transition: border-bottom-color 1s;
+}
+
+
+ /* FIXING THE NAVABR IN TOP AND SHADOW */
+
+.whole-nav-div{
+  position:  fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0px 2px 8px rgba(220,220,220,1);
+  /* border-bottom: 1px solid rgba(220,220,220,1); */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start;
+  justify-content:flex-start; */
+}
+
+
+/* END OF NAVBAR STYLING ---------------------------------------------------------------- */
+
+/* START OF NAME LOGO STYLING */
+
+header{
+  padding-top:10px;
+  /* padding-bottom: 10px; */
+  height: 80px;
+  width: 100%;
+  /* border: 1px solid blue */
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+header img{
+  width: 200px;
+  height: auto;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+.navbar-logo{
+  width: 200px;
+}
+
+.scrolled-brand{
+  font-family: 'century_gothic';
+  top: 6px;
+  left: 0;
+  right: 0;
+  width: 200px;
+  height: 30px;
+  margin:auto;
+  text-align: center;;
+  /* background-color: red;
+  border: 1px solid red; */
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  color:black;
+  font-weight: bold;
+}
+
+
+#scrolled_brand_id:hover,#scrolled_brand_id:visited,#scrolled_brand_id:link{
+  text-decoration: none;
+  color: black;
+}
+
+
+.header-height-change{
+  padding-top:0px;
+  padding-bottom: 0px;
+  height: 30px;
+}
+
+.img-height-change{
+  width: 150px;
+  height: auto;
+  opacity: 0;
+}
+
+
+
+
+.a-height-normal{
+  opacity: 0;
+  font-size: 0.9em;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.a-height-change{
+  opacity: 1;
+  font-size: 1.1em;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+
+/* END OF NAME LOGO STYLING */
+
+
+.content-style{
+  /* margin-top: 130px; */
+  padding-top: 50px;
+  /* border: 1px solid black; */
+  /* z-index: -1; */
+}
+
+
+
+.start-paragraph{
+  font-size: 1em;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.description-div{
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 400px;
+
+}
+
+
+
+.side-note{
+    /* border: 1px solid black; */
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.side-note img{
+    object-fit: contain;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* START OF CONTACT LINKS */
+
+.contact-links{
+  /* float: left; */
+  display: flex;
+  margin-top: 30px;
+  /* margin-bottom: 60px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 1px;
+  width: 170px;
+  display: flex;
+  height: 60px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+  z-index: 10;
+}
+
+.contact-links span{
+  color: rgb(120,120,120);
+  font-size: 30px;
+  padding-left: 3px;
+  padding-right: 3px;
+  position:flex;
+  transition: font-size 0.3s, padding-left 0.3s, padding-right 0.3s, color 0.3s;
+  /* border: 1px solid red; */
+}
+
+span.icon-holder:hover{
+  color: rgb(0,0,0);
+  font-size: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* END OF CONTACT LINKS */
+
+.block-conatiner{
+  /* height: 100%; */
+  /* min-height: 50%; */
+  margin-top: 140px;
+  display: block;
+  /* border: 1px solid black; */
+}
+
+
+
+
+/* ************************************************************************************************************************************** */
+/* ************************************************************************************************************************************** */
+/* ************************************************************************************************************************************** */
+/* ************************************************************************************************************************************** */
+/* FlUID MECHANCIS ********************************************************************************************************************** */
+
+.project-title{
+  margin-bottom: 30px;
+}
+
+h5{
+  margin-top: 30px;
+}
+
+.research-image{
+  position: relative;
+  object-fit: contain;
+  margin-top: 10px;
+  width: 100%;
+  /* height: auto; */
+}
+
+.sticky-list{
+  position: sticky;
+  top: 6rem;
+}

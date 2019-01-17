@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+{% extends 'my_app/base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+<div class="row content-style">
+
+  <div class="description-div">
+    <h5 class="start-paragraph">
+      The website was created based on Django framework by <a href="{% url 'my_app:home' %}">me!</a>, and was launched for
+      first time on Januanry 17th, 2019.
+      <br>
+      All Source codes can be found in <a href="https://github.com/mohammad-adib?tab=repositories">my github repository</a>.
+      </h5>
+  </div>
+</div>
+
+{% endblock%}
